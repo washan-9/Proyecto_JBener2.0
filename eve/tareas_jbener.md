@@ -18,7 +18,7 @@ Basado en la arquitectura, diseño y requerimientos plasmados en los documentos 
 - [x] Crear el archivo `Dockerfile` (basado en Python 3.11+) para empaquetar el backend de FastAPI.
 - [x] Crear el archivo `docker-compose.yml` para aislar y ejecutar el servicio sin instalar dependencias locales.
 - [x] *[Estandarización]* Configurar un formateador/linter de código para Python (ej. `ruff` o `black`) dentro del workflow.
-- [ ] Construir y probar la ejecución del contenedor (ej: `docker compose up -d`).
+- [x] Construir y probar la ejecución del contenedor (ej: `docker compose up -d`).
 - [ ] *[Git]* Hacer **Pull Request** y merge a `main`.
 
 ## Fase 1: Entorno y Base de Datos (Supabase)
