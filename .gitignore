@@ -43,3 +43,8 @@ coverage.xml
 
 # MacOS
 .DS_Store
+
+# Datos Sensibles Finanzas
+datos_csv/
+supabase/insert_data.sql
+

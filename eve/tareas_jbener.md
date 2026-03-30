@@ -19,17 +19,17 @@ Basado en la arquitectura, diseño y requerimientos plasmados en los documentos 
 - [x] Crear el archivo `docker-compose.yml` para aislar y ejecutar el servicio sin instalar dependencias locales.
 - [x] *[Estandarización]* Configurar un formateador/linter de código para Python (ej. `ruff` o `black`) dentro del workflow.
 - [x] Construir y probar la ejecución del contenedor (ej: `docker compose up -d`).
-- [ ] *[Git]* Hacer **Pull Request** y merge a `main`.
+- [x] *[Git]* Hacer **Pull Request** y merge a `main`.
 
 ## Fase 1: Entorno y Base de Datos (Supabase)
-- [ ] *[Git]* Crear rama secundaria `feat/database-setup`.
-- [ ] Crear el proyecto en Supabase.
-- [ ] Escribir y ejecutar el script `supabase/schema.sql` para crear las tablas `transacciones` y `config`.
-- [ ] Configurar las políticas de Row Level Security (RLS) en Supabase para proteger los datos de usuario.
-- [ ] Crear el usuario administrador (José Bener) en Supabase Auth.
-- [ ] Migrar el historial de datos desde el archivo CSV actual hacia la nueva base de datos PostgreSQL.
-- [ ] Configurar el archivo `.env` local (`SUPABASE_URL`, `SUPABASE_KEY`, `SUPABASE_SERVICE_KEY`, `SECRET_KEY`).
-- [ ] Añadir archivo `.env` al `.gitignore` para evitar filtraciones de seguridad.
+- [x] *[Git]* Crear rama secundaria `feat/database-setup`.
+- [x] Crear el proyecto en Supabase.
+- [x] Escribir y ejecutar el script `supabase/schema.sql` para crear las tablas `transacciones` y `config`.
+- [x] Configurar las políticas de Row Level Security (RLS) en Supabase para proteger los datos de usuario.
+- [x] Crear el usuario administrador (José Bener) en Supabase Auth.
+- [x] Migrar el historial de datos desde el archivo CSV actual hacia la nueva base de datos PostgreSQL.
+- [x] Configurar el archivo `.env` local (`SUPABASE_URL`, `SUPABASE_KEY`, `SUPABASE_SERVICE_KEY`, `SECRET_KEY`).
+- [x] Añadir archivo `.env` al `.gitignore` para evitar filtraciones de seguridad.
 - [ ] *[Git]* Hacer **Pull Request** y merge a `main`.
 
 ## Fase 2: Backend (Python + FastAPI)
