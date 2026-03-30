@@ -30,11 +30,11 @@ Basado en la arquitectura, diseño y requerimientos plasmados en los documentos 
 - [x] Migrar el historial de datos desde el archivo CSV actual hacia la nueva base de datos PostgreSQL.
 - [x] Configurar el archivo `.env` local (`SUPABASE_URL`, `SUPABASE_KEY`, `SUPABASE_SERVICE_KEY`, `SECRET_KEY`).
 - [x] Añadir archivo `.env` al `.gitignore` para evitar filtraciones de seguridad.
-- [ ] *[Git]* Hacer **Pull Request** y merge a `main`.
+- [x] *[Git]* Hacer **Pull Request** y merge a `main`.
 
 ## Fase 2: Backend (Python + FastAPI)
-- [ ] *[Git]* Crear rama secundaria `feat/backend-api`.
-- [ ] Configurar el punto de entrada `main.py` y probar la ejecución dentro del contenedor (vía `docker-compose.yml`).
+- [x] *[Git]* Crear rama secundaria `feat/backend-api`.
+- [x] Configurar el punto de entrada `main.py` y probar la ejecución dentro del contenedor (vía `docker-compose.yml`).
 - [ ] Implementar módulo de conexión a la BD en `backend/database.py` usando `supabase-py`.
 - [ ] Definir todos los modelos de validación en `backend/models/schemas.py` usando Pydantic v2.
 - [ ] Desarrollar lógica y endpoint de **Auth** (`api/auth/login`, `api/auth/logout`) con emisión de JWT.
