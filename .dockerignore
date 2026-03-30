@@ -1,0 +1,16 @@
+.git
+.gitignore
+.dockerignore
+.env
+.venv/
+venv/
+env/
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Documentación (no necesaria en producción)
+eve/
+README.md

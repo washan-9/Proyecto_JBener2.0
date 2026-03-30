@@ -1,0 +1,14 @@
+services:
+  backend:
+    build: .
+    container_name: jbener-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # Reflejar directorio actual para hot-reloading de FastAPI
+      - .:/app
+    environment:
+      # Leer explícitamente el archivo .env configurado por el usuario
+      - ENV_FILE=.env
+    # Comando sobreescrito para la recarga en caliente en desarrollo
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload

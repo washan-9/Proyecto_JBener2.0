@@ -10,14 +10,14 @@ Basado en la arquitectura, diseño y requerimientos plasmados en los documentos 
   *(Ejemplo de nombre: `eve/fix_auth_token.md`)*
 
 ## Fase 0: Repositorio, Estándares y Docker
-- [ ] Crear archivos base de exclusión: `.gitignore` y `.dockerignore`.
-- [ ] Crear archivo `.env.example` para documentar las variables de entorno sin exponer claves reales.
-- [ ] Crear la estructura de directorios estándar (`backend/`, `frontend/`, `supabase/`).
-- [ ] Escribir un `README.md` inicial con los pasos de instalación.
-- [ ] *[Git]* Crear rama secundaria `chore/docker-setup`.
-- [ ] Crear el archivo `Dockerfile` (basado en Python 3.11+) para empaquetar el backend de FastAPI.
-- [ ] Crear el archivo `docker-compose.yml` para aislar y ejecutar el servicio sin instalar dependencias locales.
-- [ ] *[Estandarización]* Configurar un formateador/linter de código para Python (ej. `ruff` o `black`) dentro del workflow.
+- [x] Crear archivos base de exclusión: `.gitignore` y `.dockerignore`.
+- [x] Crear archivo `.env.example` para documentar las variables de entorno sin exponer claves reales.
+- [x] Crear la estructura de directorios estándar (`backend/`, `frontend/`, `supabase/`).
+- [x] Escribir un `README.md` inicial con los pasos de instalación.
+- [x] *[Git]* Crear rama secundaria `chore/docker-setup`.
+- [x] Crear el archivo `Dockerfile` (basado en Python 3.11+) para empaquetar el backend de FastAPI.
+- [x] Crear el archivo `docker-compose.yml` para aislar y ejecutar el servicio sin instalar dependencias locales.
+- [x] *[Estandarización]* Configurar un formateador/linter de código para Python (ej. `ruff` o `black`) dentro del workflow.
 - [ ] Construir y probar la ejecución del contenedor (ej: `docker compose up -d`).
 - [ ] *[Git]* Hacer **Pull Request** y merge a `main`.
 
