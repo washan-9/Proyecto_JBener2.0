@@ -55,12 +55,15 @@ app.add_middleware(
 # Routers (se irán montando a medida que se creen los módulos)
 # ---------------------------------------------------------------------------
 
-# from backend.api.auth import router as auth_router
-# from backend.api.config import router as config_router
-# from backend.api.transacciones import router as transacciones_router
-# app.include_router(auth_router, prefix="/api/auth", tags=["Auth"])
-# app.include_router(config_router, prefix="/api/config", tags=["Config"])
-# app.include_router(transacciones_router, prefix="/api/transacciones", tags=["Transacciones"])
+from backend.api.auth import router as auth_router
+from backend.api.config import router as config_router
+from backend.api.transacciones import router as transacciones_router
+from backend.api.dashboard import router as dashboard_router
+
+app.include_router(auth_router, prefix="/api/auth", tags=["Auth"])
+app.include_router(config_router, prefix="/api/config", tags=["Config"])
+app.include_router(transacciones_router, prefix="/api/transacciones", tags=["Transacciones"])
+app.include_router(dashboard_router, prefix="/api/dashboard", tags=["Dashboard"])
 
 
 # ---------------------------------------------------------------------------
