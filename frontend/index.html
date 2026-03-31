@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBener | Panel Financiero</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500&family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons (Ligero y moderno) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Archivo principal de estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-dark">
+
+    <div class="app-container">
+        
+        <!-- SIDEBAR FLOTANTE (GLASS) -->
+        <aside class="sidebar" id="appSidebar">
+            <div class="sidebar-header">
+                <i data-lucide="infinity" class="logo-icon text-accent-light"></i>
+                <span class="display-md logo-text">JBener <span class="text-accent-light">2.0</span></span>
+            </div>
+            
+            <nav class="sidebar-nav mt-8 pl-1">
+                <a href="#" class="nav-item active">
+                    <i data-lucide="layout-dashboard"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i data-lucide="arrow-right-left"></i>
+                    <span>Transacciones</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i data-lucide="bar-chart-3"></i>
+                    <span>Evolución</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i data-lucide="file-text"></i>
+                    <span>Resumen SUNAT</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <a href="#" class="nav-item">
+                    <i data-lucide="settings"></i>
+                    <span>Ajustes</span>
+                </a>
+                <a href="#" class="nav-item text-danger">
+                    <i data-lucide="log-out"></i>
+                    <span>Cerrar Sesión</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- CONTENEDOR PRINCIPAL -->
+        <div class="main-wrapper" id="mainWrapper">
+            
+            <!-- TOPBAR (GLASS Y BLUR SUPERIOR) -->
+            <header class="topbar">
+                <div class="topbar-left flex-row">
+                    <button class="menu-toggle btn-ghost btn-icon mr-2" id="btnToggleMenu" style="display: none;">
+                        <i data-lucide="menu"></i>
+                    </button>
+                    <h2 class="label-sm text-secondary">Dashboard > <span class="text-primary">Resumen Mensual</span></h2>
+                </div>
+                
+                <div class="topbar-right flex-row">
+                    <div class="goal-progress-mini mr-4 hidden-mobile">
+                        <div class="goal-text display-flex justify-between mb-1"> 
+                            <span class="label-sm" style="font-size: 0.75rem;">Meta</span> 
+                            <span class="data-sm text-success">45%</span> 
+                        </div>
+                        <div class="progress-bar-bg" style="width: 120px; height: 6px;">
+                            <div class="progress-bar-fill accent-gradient" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary mr-4 hidden-mobile">
+                        <i data-lucide="plus" style="width: 18px; margin-right: 6px;"></i> Nuevo Registro
+                    </button>
+                    
+                    <!-- Fab Mobile Button -->
+                    <button class="btn btn-primary btn-fab mobile-only">
+                        <i data-lucide="plus"></i>
+                    </button>
+
+                    <div class="user-avatar">
+                        <img src="https://ui-avatars.com/api/?name=Jose+Bener&background=6d28d9&color=fff&rounded=true&bold=true" alt="User Profile" style="border-radius: 50%; width: 40px; border: 2px solid var(--color-border-focus);">
+                    </div>
+                </div>
+            </header>
+
+            <!-- CONTENIDO (VISTA DASHBOARD) -->
+            <main class="main-content">
+                
+                <div class="dashboard-header mb-8 fade-in-up">
+                    <h1 class="display-lg">Bienvenido, <span class="text-accent-light">José</span></h1>
+                    <p class="body-lg mt-2">Faltan <span class="text-success">$8,250.00</span> para alcanzar tu meta de este mes.</p>
+                </div>
+
+                <!-- CARDS DE MÉTRICAS -->
+                <div class="metrics-grid mb-8">
+                    <div class="glass-card fade-in-up delay-1">
+                        <div class="card-header flex-row justify-between">
+                            <h3 class="label-sm">Ingresos Totales</h3>
+                            <i data-lucide="arrow-up-right" class="text-success"></i>
+                        </div>
+                        <div class="card-body mt-4">
+                            <div class="data-xl text-primary">$12,450<span class="text-secondary data-md">.00</span></div>
+                            <div class="badge badge-success mt-2">+12% vs pasado</div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card fade-in-up delay-2">
+                        <div class="card-header flex-row justify-between">
+                            <h3 class="label-sm">Gastos Totales</h3>
+                            <i data-lucide="arrow-down-right" class="text-danger"></i>
+                        </div>
+                        <div class="card-body mt-4">
+                            <div class="data-xl text-primary">$4,200<span class="text-secondary data-md">.00</span></div>
+                            <div class="badge badge-danger mt-2">-5% vs pasado</div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card relative fade-in-up delay-3 overflow-hidden" style="border-color: var(--color-accent-light);">
+                        <!-- Decoración de Glassmorphism (Glow) en la carta principal -->
+                        <div style="position: absolute; top:-50px; right:-50px; width: 150px; height: 150px; background: var(--color-accent-glow); border-radius: 50%; filter: blur(50px); pointer-events: none;"></div>
+                        
+                        <div class="card-header flex-row justify-between relative z-10">
+                            <h3 class="label-sm text-accent-light">Patrimonio Neto</h3>
+                            <i data-lucide="activity" class="text-accent-light"></i>
+                        </div>
+                        <div class="card-body mt-4 relative z-10">
+                            <div class="data-xl text-primary">$8,250<span class="text-secondary data-md">.00</span></div>
+                            <div class="progress-bar-bg mt-4">
+                                <div class="progress-bar-fill accent-gradient" style="width: 65%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Scripts de la aplicación -->
+    <script>
+      // Iniciar iconos lucide
+      lucide.createIcons();
+    </script>
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
