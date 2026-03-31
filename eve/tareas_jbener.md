@@ -47,16 +47,16 @@ Basado en la arquitectura, diseño y requerimientos plasmados en los documentos 
 
 ## Fase 3: Frontend - Sistema de Diseño y Estructura
 - [ ] *[Git]* Crear rama secundaria `feat/frontend-ui`.
-- [ ] Crear estructura base de archivos (`index.html`, `styles.css`, `app.js`, `api.js`).
-- [ ] Configurar las familias de fuentes: Google Fonts Syne (títulos), Inter (body) y DM Mono (datos numéricos).
-- [ ] Trasladar los "Tokens CSS" definidos en el Design System a `:root` en `styles.css` (Colores, Espaciados, Radios).
-- [ ] Configurar clases de tipografías (ej. `display-xl`, `data-md`, `label-sm`).
-- [ ] Estilar componentes base: Botones (Primary, Outline, Ghost, Gradient CTA).
-- [ ] Estilar Cards de Activos, Sparklines (con Chart.js) y Badges (positivos/negativos, estado).
-- [ ] Implementar layout principal: Topbar fijo y Sidebar de navegación.
-- [ ] Implementar animaciones clave (`fadeUp`, transiciones de hover, y carga).
-- [ ] Asegurar reglas de responsividad (Plegado de Sidebar en móviles, Bottom sheets).
-- [ ] *[Git]* Hacer **Pull Request** y merge a `main`.
+- [x] Crear estructura base de archivos (`index.html`, `styles.css`, `app.js`, `api.js`).
+- [x] Configurar las familias de fuentes: Google Fonts Syne (títulos), Inter (body) y DM Mono (datos numéricos).
+- [x] Trasladar los "Tokens CSS" definidos en el Design System a `:root` en `styles.css` (Colores, Espaciados, Radios).
+- [x] Configurar clases de tipografías (ej. `display-xl`, `data-md`, `label-sm`).
+- [x] Estilar componentes base: Botones (Primary, Outline, Ghost, Gradient CTA).
+- [x] Estilar Cards de Activos, Sparklines (con Chart.js) y Badges (positivos/negativos, estado).
+- [x] Implementar layout principal: Topbar fijo y Sidebar de navegación.
+- [x] Implementar animaciones clave (`fadeUp`, transiciones de hover, y carga).
+- [x] Asegurar reglas de responsividad (Plegado de Sidebar en móviles, Bottom sheets).
+- [x] *[Git]* Hacer **Pull Request** y merge a `main`.
 
 ## Fase 4: Frontend - Lógica, Funcionalidad y Vistas
 - [ ] *[Git]* Crear rama secundaria `feat/frontend-logic`.
