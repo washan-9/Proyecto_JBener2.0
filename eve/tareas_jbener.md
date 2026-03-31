@@ -35,15 +35,15 @@ Basado en la arquitectura, diseño y requerimientos plasmados en los documentos 
 ## Fase 2: Backend (Python + FastAPI)
 - [x] *[Git]* Crear rama secundaria `feat/backend-api`.
 - [x] Configurar el punto de entrada `main.py` y probar la ejecución dentro del contenedor (vía `docker-compose.yml`).
-- [ ] Implementar módulo de conexión a la BD en `backend/database.py` usando `supabase-py`.
-- [ ] Definir todos los modelos de validación en `backend/models/schemas.py` usando Pydantic v2.
-- [ ] Desarrollar lógica y endpoint de **Auth** (`api/auth/login`, `api/auth/logout`) con emisión de JWT.
-- [ ] Desarrollar lógica y endpoints de **Configuración** (`api/config`) para lectura y modificación del nombre y meta.
-- [ ] Desarrollar servicio de **Transacciones** (`transacciones_service.py`), incluyendo reglas de negocio especiales (ej: dobles registros para Binance).
-- [ ] Desarrollar endpoints CRUD de **Transacciones** con parámetros de filtro (mes, categoría, solo_sunat).
-- [ ] Implementar endpoint específico para el cálculo de métricas financieras para el Dashboard.
-- [ ] Probar y validar todos los endpoints vía Swagger UI (`/docs`).
-- [ ] *[Git]* Hacer **Pull Request** y merge a `main`.
+- [x] Implementar módulo de conexión a la BD en `backend/database.py` usando `supabase-py`.
+- [x] Definir todos los modelos de validación en `backend/models/schemas.py` usando Pydantic v2.
+- [x] Desarrollar lógica y endpoint de **Auth** (`api/auth/login`, `api/auth/logout`) con emisión de JWT.
+- [x] Desarrollar lógica y endpoints de **Configuración** (`api/config`) para lectura y modificación del nombre y meta.
+- [x] Desarrollar servicio de **Transacciones** (`transacciones_service.py`), incluyendo reglas de negocio especiales (ej: dobles registros para Binance).
+- [x] Desarrollar endpoints CRUD de **Transacciones** con parámetros de filtro (mes, categoría, solo_sunat).
+- [x] Implementar endpoint específico para el cálculo de métricas financieras para el Dashboard.
+- [x] Probar y validar todos los endpoints vía Swagger UI (`/docs`).
+- [x] *[Git]* Hacer **Pull Request** y merge a `main`.
 
 ## Fase 3: Frontend - Sistema de Diseño y Estructura
 - [ ] *[Git]* Crear rama secundaria `feat/frontend-ui`.
